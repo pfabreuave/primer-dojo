@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>multiplos</title>
+		<meta chaset="utf-8"/>
+	</head>
+		<script>		
+// 			multiplo de 3, multiplo de 5,  multi de 3 y 5 menores a un numero
+//			(multiplo de 3 = Fizz), (multiplo de 5 = Buzz), (Multiplo de 3 y 5 = FizzBuzz)
+
+			inicio = Number(prompt("Numeros multiplos de 3 y 5 Menores A=?"))
+			document.write(" multiplos de 3 y 5 menores a " + inicio + " = ")
+			var imp=0
+			for(var cont=1;cont<inicio;cont++) {	
+				if (cont %3 === 0){
+					if (cont %5 === 0){ 
+						imp='FizzBuzz'}
+					else {
+						imp='Fizz' }
+				}		
+				else {	
+					if (cont %5 === 0){ 
+						imp='Buzz'}
+					else{
+						imp=cont }
+				}				               	              
+    		  document.write(imp + " ")  }
+			document.write("<br>") 
+		</script>
+</html>
+
